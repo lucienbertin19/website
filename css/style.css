@@ -8,8 +8,9 @@ body,html{
     margin:0;
     font-family: Arial;
     background-color:rgba(0,142,204,0.2);
-    background-image:url("../img/sky.jpg")
-   
+    background-size: cover;
+    background-image:url("../img/Gulf.jpg")
+    
 }
 ul {
 
@@ -18,7 +19,7 @@ text-align: center;
 margin: 0;
 padding: 0;
 overflow: hidden;
-background-color: rgba(0,142,204,0.2);
+background-color:transparent;
 }
 
 li {
@@ -28,19 +29,19 @@ li {
 
 
 li a {
-color:white;
+color:peru;
 text-decoration: none;
 }
 
 li:hover {
 background-color: #555;
-color: white;
+color:peru;
 }
 div.form_container{ 
 width: 100%; 
 height: 40vh;
 position: relative;
-background-image: url("../img/flight.jpg");
+
 background-repeat: no-repeat;
 background-size: cover;
 background-position-y: -88px;    
@@ -52,7 +53,7 @@ background-position-y: -88px;
  position: absolute;
  left:20%;
  top:30%;
- background-color: rgba(55, 69, 146, 0.7);
+ background-color: peru;
  padding-bottom:0.1%;
 }
 
@@ -108,6 +109,7 @@ button.active{
     flex-wrap: wrap;
     padding: 20px 4px;
     padding-top:10%;
+    color: rgba(0,142,204);
 }
 
 .image_text{
@@ -137,8 +139,8 @@ button.active{
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgba(0,142,204,0.2);
-    color: white;
+    background-color:transparent;
+    color: peru;
     text-align: center;
     }
 
