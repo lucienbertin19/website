@@ -14,12 +14,11 @@ class Database{
         $this->database = "ars";
     }
 
-    function  connect(){
+    public function  connect(){
         try {
             $conn = new PDO("mysql:host=$this->servername;dbname=$this->database", $this->username, $this->password);
             // set the PDO error mode to exception
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            echo "Connected successfully"; 
             }
         catch(PDOException $e)
             {
@@ -27,6 +26,4 @@ class Database{
             }
     }
 }
-$conn = new Database();
-$conn->connect();
 ?>
