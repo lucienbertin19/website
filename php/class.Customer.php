@@ -1,13 +1,9 @@
 <?php
-include_once "database.php";
+include "database.php";
     class Customer{
-
-        private $con, $db;
-
+        public $db = new Database();
         function __construct(){  
-            $this->db = new Database();
-            $this->con = $this->db->connect();  
-            var_dump($this->con);
+
         }
     
         public function search($departure="stanstead"){
@@ -16,7 +12,7 @@ include_once "database.php";
                     join departure on flight.id=departure.flight_id
                     join flight_type on flight_type.id=flight.type_id
                     join destination on destination.flight_type_id=flight_type.id";
-            $stmt = $this->con->prepare($query);
+            $stmt = $db->connect()->prepare($query);
             $stmt->execute();
 
             // this is how to get number of rows returned
@@ -52,3 +48,6 @@ include_once "database.php";
             }
         }
     }
+
+    $customer=new Customer();
+    $customer->search();
