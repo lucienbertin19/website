@@ -62,6 +62,9 @@ include "php/database.php";
           input[type=text]:focus, input[type=password]:focus,  input[type=email]:focus {
             background-color: #ddd;
             outline: none;
+            
+            
+}
           }
 
           button {
@@ -76,13 +79,20 @@ include "php/database.php";
           }
 
           button:hover {
-            opacity:1;
+            opacity:5;
           }
 
           .cancelbtn {
             padding: 14px 20px;
             background-color: #f44336;
           }
+
+          .signupbtn{
+            background-color: green;
+            padding: 14px 20px;
+            
+          }
+           
 
           .cancelbtn, .signupbtn {
             float: right;
@@ -93,6 +103,14 @@ include "php/database.php";
             content: "";
             clear: both;
             display: table;
+          }
+
+          .container {
+            border-radius: 5px;
+            background-color: transparent;
+            padding: 20px;
+            display: block;
+            text-align: center;
           }
   </style>
   </head>
